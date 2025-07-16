@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval';">   
+     <title>
+        
+    </title>
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap-5.3.7-dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+            
+            </div>
+            <div class="col-sm">
+             <table align="center">
+                <tbody>
+                    <tr>
+                       <td colspan="4"><input type="text" id="display" value="0" disabled> </td>
+                    </tr>
+
+                    <tr >
+                        <td><button type="button" value="7" onclick ="atualizarDisplay(this)" class="btn btn-light">7</button></td>
+                        <td><button type="button" value="8" onclick ="atualizarDisplay(this)" class="btn btn-light">8</button></td>
+                        <td><button type="button" value="9" onclick ="atualizarDisplay(this)" class="btn btn-light">9</button></td>
+                        <td><button type="button" value="*" onclick ="atualizaOperacao(this)" class="btn btn-warning">*</button></td>
+                    </tr>
+                    <tr >
+                        <td><button type="button" value="4" onclick ="atualizarDisplay(this)" class="btn btn-light">4</button></td>
+                        <td><button type="button" value="5" onclick ="atualizarDisplay(this)" class="btn btn-light">5</button></td>
+                        <td><button type="button" value="6" onclick ="atualizarDisplay(this)" class="btn btn-light">6</button></td>
+                        <td><button type="button" value="-" onclick ="atualizaOperacao(this)" class="btn btn-warning">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" value="1" onclick ="atualizarDisplay(this)" class="btn btn-light">1</button></td>
+                        <td><button type="button" value="2" onclick ="atualizarDisplay(this)" class="btn btn-light">2</button></td>
+                        <td><button type="button" value="3" onclick ="atualizarDisplay(this)" class="btn btn-light">3</button></td>
+                        <td><button type="button" value="+" onclick ="atualizaOperacao(this)" class="btn btn-warning">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" value="c" onclick ="limpaDisplay()" class="btn btn-primary">C</button></td>
+                        <td><button type="button" value="0" class="btn btn-light">0</button></td>
+                        <td><button type="button" value="=" onclick ="calcularOperacao()" class="btn btn-dark">=</button></td>
+                        <td><button type="button" value="/" onclick ="atualizaOperacao(this)" class="btn btn-warning">/</button></td>
+                    </tr>
+                    
+                </tbody>
+
+
+             </table>
+            </div>
+            <div class="col-sm">
+        </div>
+  </div>
+</div>
+    
+    <!-- Bootstrap JS (Bundle com Popper) -->
+    <script src="./js/bootstrap-js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <!-- Seu JS -->
+    <script src="./js/funcoes.js" defer></script>
+</body>
+</html>
