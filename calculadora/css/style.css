@@ -1,0 +1,146 @@
+/* Estilos gerais */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 100%;
+}
+
+/* Estilo das colunas vazias */
+.col-sm {
+    display: none; /* Esconde as colunas vazias em dispositivos pequenos */
+}
+
+@media (min-width: 768px) {
+    .col-sm {
+        display: block; /* Mostra as colunas vazias em telas maiores */
+    }
+}
+
+/* Estilo da tabela/calculadora */
+table {
+    background-color: #2c3e50;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin: 0 auto;
+}
+
+/* Estilo do display */
+#display {
+    width: 100%;
+    height: 70px;
+    text-align: right;
+    font-size: 2.5rem;
+    padding: 0 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Digital', 'Segoe UI', monospace;
+    margin-bottom: 15px;
+}
+
+/* Estilo dos botões */
+.btn {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    border-radius: 10px !important;
+    border: none !important;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões numéricos */
+.btn-light {
+    background-color: #ecf0f1 !important;
+    color: #2c3e50 !important;
+}
+
+.btn-light:hover {
+    background-color: #d6dbdf !important;
+}
+
+/* Botão de limpar */
+.btn-primary {
+    background-color: #3498db !important;
+    color: white !important;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9 !important;
+}
+
+/* Botão de igual */
+.btn-dark {
+    background-color: #27ae60 !important;
+    color: white !important;
+}
+
+.btn-dark:hover {
+    background-color: #219653 !important;
+}
+
+/* Botões de operação */
+.btn-warning {
+    background-color: #f39c12 !important;
+    color: white !important;
+}
+
+.btn-warning:hover {
+    background-color: #d35400 !important;
+}
+
+/* Efeito de foco para acessibilidade */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+    .btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    #display {
+        height: 60px;
+        font-size: 2rem;
+    }
+}
+
+/* Fonte digital para o display (opcional) */
+@font-face {
+    font-family: 'Digital';
+    src: url('//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.eot');
+    src: url('//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.eot?#iefix') format('embedded-opentype'),
+         url('//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.woff2') format('woff2'),
+         url('//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.woff') format('woff'),
+         url('//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.ttf') format('truetype'),
+         url('//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.svg#Digital-7') format('svg');
+}
